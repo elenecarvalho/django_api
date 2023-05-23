@@ -38,7 +38,7 @@ Cela démarrera le serveur local de l'API, ce qui vous permettra d'envoyer des r
 
 ### **/val**
 
-Cet endpoint retourne une valeur entière aléatoire comprise entre 0 et 100.
+Cette endpoint retourne une valeur entière aléatoire comprise entre 0 et 100.
 
 - Endpoint : /val
 - Méthode : GET
@@ -279,37 +279,37 @@ GET http://127.0.0.1:8000/stations_velo/toutes/cap
 
 Réponse : 
 {
-{"16": {"Capacit\u00e9": 11}, 
-"30": {"Capacit\u00e9": 12}, 
-"2": {"Capacit\u00e9": 10}, 
-"26": {"Capacit\u00e9": 10}, 
-"14": {"Capacit\u00e9": 10}, 
-"22": {"Capacit\u00e9": 12}, 
-"23": {"Capacit\u00e9": 12}, 
-"27": {"Capacit\u00e9": 15},
-"24": {"Capacit\u00e9": 10}, 
-"4": {"Capacit\u00e9": 11}, 
-"1": {"Capacit\u00e9": 30}, 
-"17": {"Capacit\u00e9": 14}, 
-"21": {"Capacit\u00e9": 12}, 
-"10": {"Capacit\u00e9": 15}, 
-"28": {"Capacit\u00e9": 10}, 
-"15": {"Capacit\u00e9": 10}, 
-"9": {"Capacit\u00e9": 20}, 
-"13": {"Capacit\u00e9": 14}, 
-"3": {"Capacit\u00e9": 15}, 
-"6": {"Capacit\u00e9": 15}, 
-"5": {"Capacit\u00e9": 10}, 
-"7": {"Capacit\u00e9": 18}, 
-"29": {"Capacit\u00e9": 12}, 
-"8": {"Capacit\u00e9": 10}, 
-"18": {"Capacit\u00e9": 20}, 
-"19": {"Capacit\u00e9": 10}, 
-"12": {"Capacit\u00e9": 15}, 
-"25": {"Capacit\u00e9": 12}, 
-"20": {"Capacit\u00e9": 15}, 
-"11": {"Capacit\u00e9": 10}, 
-"Capacit\u00e9 totale": 400}
+{"16": {"Capacite": 11}, 
+"30": {"Capacite": 12}, 
+"2": {"Capacite": 10}, 
+"26": {"Capacite": 10}, 
+"14": {"Capacite": 10}, 
+"22": {"Capacite": 12}, 
+"23": {"Capacite": 12}, 
+"27": {"Capacite": 15},
+"24": {"Capacite": 10}, 
+"4": {"Capacite": 11}, 
+"1": {"Capacite": 30}, 
+"17": {"Capacite": 14}, 
+"21": {"Capacite": 12}, 
+"10": {"Capacite": 15}, 
+"28": {"Capacite": 10}, 
+"15": {"Capacite": 10}, 
+"9": {"Capacite": 20}, 
+"13": {"Capacite": 14}, 
+"3": {"Capacite": 15}, 
+"6": {"Capacite": 15}, 
+"5": {"Capacite": 10}, 
+"7": {"Capacite": 18}, 
+"29": {"Capacite": 12}, 
+"8": {"Capacite": 10}, 
+"18": {"Capacite": 20}, 
+"19": {"Capacite": 10}, 
+"12": {"Capacite": 15}, 
+"25": {"Capacite": 12}, 
+"20": {"Capacite": 15}, 
+"11": {"Capacite": 10}, 
+"Capacite totale": 400}
 }
 ```
 
