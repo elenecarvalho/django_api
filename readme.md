@@ -20,13 +20,17 @@ De plus, cette API permet également d'accéder aux informations des stations de
 
 # Utilisation 
 
-Pour utiliser cette API, vous devrez d'abord installer django et Pillow : <br>
-    `pip install django` <br>
-    `pip install Pillow`
+Pour utiliser cette API, téléchargez les fichiers pour l'execution du serveur : https://github.com/elenecarvalho/django_api/releases/tag/1.0
 
-Puis, lancer le serveur en local.<br>
-Pour cela, vous devez exécuter la commande suivante dans votre terminal :<br>
-    python chemin/vers/serveur/manage.py runserver
+Il faudra ensuite installer python 3.8 ou ultérieur, sans oublier d'ajouter Python à la variable PATH
+
+Ensuite, installez django et Pillow depuis le terminal:
+`pip install django`<br>
+`pip install Pillow`
+
+Puis, lancez le serveur en local.
+Pour cela, exécutez la commande suivante dans le terminal :
+python chemin/vers/serveur/manage.py runserver
 
 Cela démarrera le serveur local de l'API, ce qui vous permettra d'envoyer des requêtes à l'aide de votre navigateur ou d'un autre client HTTP. Une fois le serveur démarré, vous pourrez accéder aux endpoints de l'API à partir de l'URL http://127.0.0.1:8000/ OU http://localhost:8000.
 
