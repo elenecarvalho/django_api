@@ -24,8 +24,8 @@ Pour utiliser cette API, téléchargez les fichiers pour l'execution du serveur 
 
 Il faudra ensuite installer python 3.8 ou ultérieur, sans oublier d'ajouter Python à la variable PATH
 
-Ensuite, installez django et Pillow depuis le terminal:
-`pip install django`<br>
+Ensuite, installez django et Pillow depuis le terminal: <br> 
+`pip install django` <br>
 `pip install Pillow`
 
 Puis, lancez le serveur en local.
