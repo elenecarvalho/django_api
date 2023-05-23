@@ -2,6 +2,8 @@
 
 Bienvenue dans la documentation de l'API pour les fonctionnalités suivantes :
 
+Telecharger le fichier Releases 
+
 - /val qui retourne une valeur entière aléatoire comprise entre 0 et 100 
 - /val?nb=n (où n est un nombre entier positif) qui retourne du code JSON contenant un tableau de n valeurs entières aléatoires comprises en -1000 et +1000
 - /calc/add?n1=n&n2=m (où n et m sont des nombres entiers positifs) retourne un simple texte contenant le résultat de l'addition de n et m
