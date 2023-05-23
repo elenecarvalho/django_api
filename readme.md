@@ -42,7 +42,7 @@ Cet endpoint retourne une valeur entière aléatoire comprise entre 0 et 100.
 Exemple :
 
 ```
-GET https://127.0.0.1:8000/val
+GET http://127.0.0.1:8000/val
 
 Réponse : 42
 ```
@@ -138,17 +138,12 @@ GET http://127.0.0.1:8000/stations_velo?id=17
 
 Réponse : 
 {
-    "address": "5, RUE DE L'INDUSTRIE",
-    "available_bikes": 7,
-    "available_bike_stands": 12,
-    "bike_stands": 19,
-    "last_update": 1618576027000,
-    "name": "La Fayette",
-    "number": 17,
-    "position": {
-        "lat": 47.236488,
-        "lng": 6.014331
-    }
+"address": "Avenue de la Gare d'Eau face commissariat", 
+"capacity": 14, 
+"lat": 47.232903, 
+"lon": 6.020116, 
+"name": "17 - PREFECTURE", 
+"station_id": "17"
 }
 ```
 
@@ -167,7 +162,7 @@ Exemple :
 ```
 GET http://127.0.0.1:8000/stations_velo?id=17&addr
 
-Réponse : "5, RUE DE L'INDUSTRIE"
+Réponse : "Avenue de la Gare d'Eau face commissariat"
 ```
 
 ### **stations_velo?id=n&cap**
@@ -185,7 +180,7 @@ Exemple
 ```
 GET http://127.0.0.1:8000/stations_velo?id=17&cap
 
-Réponse : 19
+Réponse : 14
 ```
 
 ### **stations_velo?id=n&cap&addr**
@@ -201,11 +196,11 @@ Cette endpoint retourne la capacité et l'adresse de la station de vélo n, sous
 Exemple
 
 ```
-GET http://127.0.0.1:8000/stations_velo?id=17&cap
+GET http://127.0.0.1:8000/stations_velo?id=1&cap&addr
 
 Réponse : 
-"Adresse : 5, RUE DE L'INDUSTRIE
-Capacité : 19"
+"Adresse : Parc des Glacis - Entrée Avenue de la Paix
+Capacité : 30
 ```
 
 ### **stations_velo?id=toutes&cap**
@@ -241,7 +236,7 @@ Exemple :
 ```
 GET http://127.0.0.1:8000/stations_velo/17/addr
 
-Réponse : "5, RUE DE L'INDUSTRIE"
+Réponse : "Avenue de la Gare d'Eau face commissariat"
 ```
 
 ### **stations_velo/n/cap**
@@ -278,20 +273,40 @@ GET http://127.0.0.1:8000/stations_velo/toutes/cap
 
 Réponse : 
 {
-    "1":{
-        "capacité": 20
-    },
-    "2":{}
-        "capacité": 10
-    },
-    "3":{
-        "capacité": 12
-    },
-    ...
-    "Capacité totale": 1000
+{"16": {"Capacit\u00e9": 11}, 
+"30": {"Capacit\u00e9": 12}, 
+"2": {"Capacit\u00e9": 10}, 
+"26": {"Capacit\u00e9": 10}, 
+"14": {"Capacit\u00e9": 10}, 
+"22": {"Capacit\u00e9": 12}, 
+"23": {"Capacit\u00e9": 12}, 
+"27": {"Capacit\u00e9": 15},
+"24": {"Capacit\u00e9": 10}, 
+"4": {"Capacit\u00e9": 11}, 
+"1": {"Capacit\u00e9": 30}, 
+"17": {"Capacit\u00e9": 14}, 
+"21": {"Capacit\u00e9": 12}, 
+"10": {"Capacit\u00e9": 15}, 
+"28": {"Capacit\u00e9": 10}, 
+"15": {"Capacit\u00e9": 10}, 
+"9": {"Capacit\u00e9": 20}, 
+"13": {"Capacit\u00e9": 14}, 
+"3": {"Capacit\u00e9": 15}, 
+"6": {"Capacit\u00e9": 15}, 
+"5": {"Capacit\u00e9": 10}, 
+"7": {"Capacit\u00e9": 18}, 
+"29": {"Capacit\u00e9": 12}, 
+"8": {"Capacit\u00e9": 10}, 
+"18": {"Capacit\u00e9": 20}, 
+"19": {"Capacit\u00e9": 10}, 
+"12": {"Capacit\u00e9": 15}, 
+"25": {"Capacit\u00e9": 12}, 
+"20": {"Capacit\u00e9": 15}, 
+"11": {"Capacit\u00e9": 10}, 
+"Capacit\u00e9 totale": 400}
 }
 ```
 
 ## Conclusion
 
-Vous avez maintenant accès à l'API pour accéder à différents aux informations des stations de vélo en libre-service de Besançon. N'oubliez pas de terminer le serveur local en utilisant la commande Ctrl+C dans votre terminal lorsque vous avez terminé d'utiliser l'API.
+Vous avez maintenant accès à l'API pour generer un chiffre aleatoirement, realiser des calculs. Cette API permet également d'accéder aux informations des stations de vélo en libre-service de Besançon. N'oubliez pas de quitter le serveur local en utilisant la commande Ctrl+C dans votre terminal lorsque vous avez terminé d'utiliser l'API.
